@@ -16,7 +16,7 @@ class DocLogo extends StatelessWidget {
           SizedBox(width: 10.w),
           Text(
             'Health Hub',
-            style: TestStyles.font24BlackWeight700,
+            style: TextStyles.font24BlackWeight700,
           ),
         ],
       ),

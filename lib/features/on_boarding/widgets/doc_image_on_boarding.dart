@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../../core/theming/styles.dart';
+
 class DoctorImage extends StatelessWidget {
   const DoctorImage({super.key});
 
@@ -23,6 +25,16 @@ class DoctorImage extends StatelessWidget {
         ),
         child: Image.asset('assets/images/doc_image.png'),
       ),
+      Positioned(
+        bottom: 30.h,
+        left: 0,
+        right: 0,
+        child: Text(
+          'Best Doctor \nAppointment App',
+          style: TextStyles.font32BlueBold,
+          textAlign: TextAlign.center,
+        ),
+      )
     ]);
   }
 }
