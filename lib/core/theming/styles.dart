@@ -1,0 +1,21 @@
+import 'package:doctor_appointment/core/theming/colors.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+class TestStyles {
+  static TextStyle font24BlackWeight700 = TextStyle(
+    fontSize: 24.sp,
+    fontWeight: FontWeight.w700,
+    color: const Color(0XFF242424),
+  );
+  static TextStyle font32BlueBold = TextStyle(
+    fontSize: 32.sp,
+    fontWeight: FontWeight.bold,
+    color: ColorManager.mainBlue,
+  );
+  static TextStyle font24GreyWeight400 = TextStyle(
+    fontSize: 20.sp,
+    fontWeight: FontWeight.w400,
+    color: ColorManager.mainGrey,
+  );
+}
