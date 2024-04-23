@@ -13,6 +13,12 @@ class TextStyles {
     fontWeight: FontWeight.bold,
     color: ColorManager.mainBlue,
   );
+  static TextStyle font24BlueBold = TextStyle(
+    fontSize: 32.sp,
+    fontWeight: FontWeight.bold,
+    color: ColorManager.mainBlue,
+  );
+
   static TextStyle font24GreyWeight400 = TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeight.w400,
