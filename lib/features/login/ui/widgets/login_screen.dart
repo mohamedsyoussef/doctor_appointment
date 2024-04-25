@@ -21,7 +21,7 @@ class LoginScreen extends StatelessWidget {
               child: Column(
                 children: [
                   const MainTitles(title: 'Welcome Back'),
-                  SizedBox(height: 10.h),
+                  SizedBox(height: 11.h),
                   const Subtitle(
                       content:
                           'We\'re excited to have you back, can\'t wait to see what you\'ve been up to since you last logged in.')
