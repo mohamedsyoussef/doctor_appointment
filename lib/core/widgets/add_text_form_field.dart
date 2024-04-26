@@ -14,18 +14,22 @@ class AddTextFormField extends StatelessWidget {
   final String? labelText;
   final Widget? suffixIcon;
   final Color? cursorColor;
-  const AddTextFormField(
-      {super.key,
-      required this.labelText,
-      this.contentPadding,
-      this.enabledBorder,
-      this.focusedBorder,
-      this.inputTextStyle,
-      this.isObscureText,
-      this.hintStyle,
-      required this.suffixIcon,
-      required this.hintText,
-      this.cursorColor});
+  final Color? suffixIconColor;
+
+  const AddTextFormField({
+    super.key,
+    required this.labelText,
+    this.contentPadding,
+    this.enabledBorder,
+    this.focusedBorder,
+    this.inputTextStyle,
+    this.isObscureText,
+    this.hintStyle,
+    required this.suffixIcon,
+    required this.hintText,
+    this.cursorColor,
+    this.suffixIconColor,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -46,12 +50,13 @@ class AddTextFormField extends StatelessWidget {
               borderRadius: BorderRadius.circular(16),
               borderSide: BorderSide(
                 color: ColorManager.mainBlue,
-                width: 1.5.w,
+                width: 1.2.w,
               ),
             ),
         hintStyle: hintStyle ?? TextStyles.font14GreyWeight500,
         hintText: hintText,
         suffixIcon: suffixIcon,
+        suffixIconColor: ColorManager.mainBlue,
       ),
       obscureText: isObscureText ?? false,
       style: TextStyles.font14DarkBlueWeight500,

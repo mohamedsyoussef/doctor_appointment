@@ -37,7 +37,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     children: [
                       const AddTextFormField(
                         labelText: 'Email',
-                        isObscureText: false,
                         suffixIcon: Icon(Icons.email),
                         hintText: 'Enter Your E-mail',
                       ),
