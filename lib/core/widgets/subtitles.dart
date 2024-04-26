@@ -1,4 +1,4 @@
-import 'package:doctor_appointment/core/theming/styles.dart';
+import 'package:doctor_appointment/core/theming/text_styles.dart';
 import 'package:flutter/material.dart';
 
 class Subtitle extends StatelessWidget {
@@ -9,7 +9,7 @@ class Subtitle extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       content,
-      style: TextStyles.font24GreyWeight400,
+      style: TextStyles.font14GreyWeight500,
     );
   }
 }

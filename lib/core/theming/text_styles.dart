@@ -19,9 +19,19 @@ class TextStyles {
     color: ColorManager.mainBlue,
   );
 
-  static TextStyle font24GreyWeight400 = TextStyle(
+  static TextStyle font14GreyWeight400 = TextStyle(
     fontSize: 14.sp,
     fontWeight: FontWeight.w400,
     color: ColorManager.mainGrey,
+  );
+  static TextStyle font14GreyWeight500 = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w500,
+    color: ColorManager.hintText,
+  );
+  static TextStyle font14DarkBlueWeight500 = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w500,
+    color: ColorManager.inputText,
   );
 }
