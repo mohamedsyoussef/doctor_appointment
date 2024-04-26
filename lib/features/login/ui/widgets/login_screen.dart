@@ -37,14 +37,14 @@ class _LoginScreenState extends State<LoginScreen> {
                     children: [
                       const AddTextFormField(
                         labelText: 'Email',
-                        obscureText: false,
+                        isObscureText: false,
                         suffixIcon: Icon(Icons.email),
                         hintText: 'Enter Your E-mail',
                       ),
                       SizedBox(height: 20.h),
                       const AddTextFormField(
                         labelText: 'Password',
-                        obscureText: true,
+                        isObscureText: true,
                         suffixIcon: Icon(Icons.lock),
                         hintText: 'Enter Your Password',
                       )
