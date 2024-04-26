@@ -1,8 +1,12 @@
 import 'package:doctor_appointment/core/widgets/add_text_form_field.dart';
+import 'package:doctor_appointment/core/widgets/custom_button.dart';
 import 'package:doctor_appointment/core/widgets/main_title.dart';
 import 'package:doctor_appointment/core/widgets/subtitles.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
+import '../../../../core/theming/text_styles.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -56,7 +60,18 @@ class _LoginScreenState extends State<LoginScreen> {
                               : Icons.visibility),
                         ),
                         hintText: 'Enter Your Password',
-                      )
+                      ),
+                      SizedBox(height: 20.h),
+                      Align(
+                        alignment: Alignment.centerRight,
+                        child: GestureDetector(
+                          onTap: () {},
+                          child: Text('Forgot Password?',
+                              style: TextStyles.font12BlueBold),
+                        ),
+                      ),
+                      SizedBox(height: 20.h),
+                      CustomButton(text: 'Login', onPressed: () {}),
                     ],
                   ))
             ],
