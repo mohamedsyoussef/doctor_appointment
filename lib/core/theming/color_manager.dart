@@ -6,4 +6,5 @@ class ColorManager {
   static const Color borderGrey = Color(0XFFEDEDED);
   static const Color hintText = Color(0XFFC2C2C2);
   static const Color inputText = Color(0XFF242424);
+  static const Color formFillCollor = Color(0XFFFDFDFF);
 }

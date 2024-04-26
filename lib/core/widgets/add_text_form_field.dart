@@ -1,4 +1,4 @@
-import 'package:doctor_appointment/core/theming/colors.dart';
+import 'package:doctor_appointment/core/theming/color_manager.dart';
 import 'package:doctor_appointment/core/theming/text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -15,6 +15,7 @@ class AddTextFormField extends StatelessWidget {
   final Widget? suffixIcon;
   final Color? cursorColor;
   final Color? suffixIconColor;
+  final Color? fillColor;
 
   const AddTextFormField({
     super.key,
@@ -29,6 +30,7 @@ class AddTextFormField extends StatelessWidget {
     required this.hintText,
     this.cursorColor,
     this.suffixIconColor,
+    this.fillColor,
   });
 
   @override
@@ -57,6 +59,8 @@ class AddTextFormField extends StatelessWidget {
         hintText: hintText,
         suffixIcon: suffixIcon,
         suffixIconColor: ColorManager.mainBlue,
+        fillColor: fillColor ?? ColorManager.formFillCollor,
+        filled: true,
       ),
       obscureText: isObscureText ?? false,
       style: TextStyles.font14DarkBlueWeight500,

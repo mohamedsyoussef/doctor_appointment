@@ -13,6 +13,7 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   final formKey = GlobalKey<FormState>();
+  bool isObsecureText = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,10 +42,19 @@ class _LoginScreenState extends State<LoginScreen> {
                         hintText: 'Enter Your E-mail',
                       ),
                       SizedBox(height: 20.h),
-                      const AddTextFormField(
+                      AddTextFormField(
                         labelText: 'Password',
-                        isObscureText: true,
-                        suffixIcon: Icon(Icons.lock),
+                        isObscureText: isObsecureText,
+                        suffixIcon: GestureDetector(
+                          onTap: () {
+                            setState(() {
+                              isObsecureText = !isObsecureText;
+                            });
+                          },
+                          child: Icon(isObsecureText
+                              ? Icons.visibility_off
+                              : Icons.visibility),
+                        ),
                         hintText: 'Enter Your Password',
                       )
                     ],
