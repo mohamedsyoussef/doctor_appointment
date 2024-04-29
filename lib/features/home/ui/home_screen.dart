@@ -7,9 +7,14 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: SafeArea(
-            child: Container(
-      color: Colors.blue,
-      child: Text('hello'),
+            child: Center(
+      child: Container(
+        color: Colors.blue,
+        child: Text(
+          'hello this is our home screen',
+          style: TextStyle(fontSize: 30),
+        ),
+      ),
     )));
   }
 }
