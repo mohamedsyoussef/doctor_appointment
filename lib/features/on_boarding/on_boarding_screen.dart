@@ -4,12 +4,11 @@ import 'package:doctor_appointment/core/widgets/custom_button.dart';
 import 'package:doctor_appointment/features/on_boarding/widgets/doc_image_on_boarding.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../core/theming/styles.dart';
+import '../../core/theming/text_styles.dart';
 import 'widgets/doc_logo.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
-  
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +30,7 @@ class OnBoardingScreen extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 5.w),
                   child: Text(
                     'Manage and schedule all of your medical appointments easily with Health Hub to get a new experience.',
-                    style: TextStyles.font24GreyWeight400,
+                    style: TextStyles.font14GreyWeight400,
                     textAlign: TextAlign.center,
                   ),
                 ),
