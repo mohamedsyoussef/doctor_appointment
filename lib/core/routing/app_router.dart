@@ -1,7 +1,7 @@
 import 'package:doctor_appointment/core/di/dependency_injection.dart';
 import 'package:doctor_appointment/core/routing/routes.dart';
 import 'package:doctor_appointment/features/login/ui/widgets/login_screen.dart';
-import 'package:doctor_appointment/features/on_boarding/on_boarding_screen.dart';
+import 'package:doctor_appointment/features/on_boarding/ui/on_boarding_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

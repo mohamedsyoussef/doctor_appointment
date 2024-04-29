@@ -1,10 +1,10 @@
 import 'package:doctor_appointment/core/helpers/extensions.dart';
 import 'package:doctor_appointment/core/routing/routes.dart';
 import 'package:doctor_appointment/core/widgets/custom_button.dart';
-import 'package:doctor_appointment/features/on_boarding/widgets/doc_image_on_boarding.dart';
+import 'package:doctor_appointment/features/on_boarding/ui/widgets/doc_image_on_boarding.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../core/theming/text_styles.dart';
+import '../../../core/theming/text_styles.dart';
 import 'widgets/doc_logo.dart';
 
 class OnBoardingScreen extends StatelessWidget {
