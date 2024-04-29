@@ -38,7 +38,7 @@ class OnBoardingScreen extends StatelessWidget {
                 CustomButton(
                   text: 'Get Started',
                   onPressed: () {
-                    context.pushNamed(Routes.loginScreen);
+                    Navigator.pushReplacementNamed(context, Routes.loginScreen);
                   },
                 ),
               ],
