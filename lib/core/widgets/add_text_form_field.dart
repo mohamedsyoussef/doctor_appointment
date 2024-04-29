@@ -16,6 +16,8 @@ class AddTextFormField extends StatelessWidget {
   final Color? cursorColor;
   final Color? suffixIconColor;
   final Color? fillColor;
+  final TextEditingController? controller;
+  final FormFieldValidator<String>? validator;
 
   const AddTextFormField({
     super.key,
@@ -31,11 +33,14 @@ class AddTextFormField extends StatelessWidget {
     this.cursorColor,
     this.suffixIconColor,
     this.fillColor,
+    this.controller,
+    required this.validator,
   });
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: controller,
       cursorColor: cursorColor ?? ColorManager.mainBlue,
       decoration: InputDecoration(
         isDense: true,
@@ -55,6 +60,20 @@ class AddTextFormField extends StatelessWidget {
                 width: 1.2.w,
               ),
             ),
+        errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: BorderSide(
+            color: Colors.red,
+            width: 1.2.w,
+          ),
+        ),
+        focusedErrorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: BorderSide(
+            color: Colors.red,
+            width: 1.2.w,
+          ),
+        ),
         hintStyle: hintStyle ?? TextStyles.font14GreyWeight500,
         hintText: hintText,
         suffixIcon: suffixIcon,
@@ -64,6 +83,9 @@ class AddTextFormField extends StatelessWidget {
       ),
       obscureText: isObscureText ?? false,
       style: TextStyles.font14DarkBlueWeight500,
+      validator: (value) {
+        return validator!(value!);
+      },
     );
   }
 }
