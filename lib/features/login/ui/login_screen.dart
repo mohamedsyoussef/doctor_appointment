@@ -70,7 +70,7 @@ class LoginScreen extends StatelessWidget {
                     )
                   ],
                 ),
-                LoginBlocListener(),
+                const LoginBlocListener(),
               ],
             ),
           ),
