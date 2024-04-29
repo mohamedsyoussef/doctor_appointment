@@ -1,15 +1,14 @@
 import 'package:doctor_appointment/core/helpers/extensions.dart';
 import 'package:doctor_appointment/core/routing/routes.dart';
 import 'package:doctor_appointment/core/widgets/custom_button.dart';
-import 'package:doctor_appointment/features/on_boarding/widgets/doc_image_on_boarding.dart';
+import 'package:doctor_appointment/features/on_boarding/ui/widgets/doc_image_on_boarding.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import '../../core/theming/styles.dart';
+import '../../../core/theming/text_styles.dart';
 import 'widgets/doc_logo.dart';
 
 class OnBoardingScreen extends StatelessWidget {
   const OnBoardingScreen({super.key});
-  
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +30,7 @@ class OnBoardingScreen extends StatelessWidget {
                   padding: EdgeInsets.symmetric(horizontal: 5.w),
                   child: Text(
                     'Manage and schedule all of your medical appointments easily with Health Hub to get a new experience.',
-                    style: TextStyles.font24GreyWeight400,
+                    style: TextStyles.font14GreyWeight400,
                     textAlign: TextAlign.center,
                   ),
                 ),
@@ -39,7 +38,7 @@ class OnBoardingScreen extends StatelessWidget {
                 CustomButton(
                   text: 'Get Started',
                   onPressed: () {
-                    context.pushNamed(Routes.loginScreen);
+                    Navigator.pushReplacementNamed(context, Routes.loginScreen);
                   },
                 ),
               ],

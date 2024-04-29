@@ -1,3 +1,4 @@
+import 'package:doctor_appointment/core/theming/color_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -10,10 +11,11 @@ class CustomButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return ElevatedButton(
       style: ButtonStyle(
-        backgroundColor: MaterialStateProperty.all<Color>(Colors.blue),
+        backgroundColor:
+            MaterialStateProperty.all<Color>(ColorManager.mainBlue),
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
           RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(10.0),
+            borderRadius: BorderRadius.circular(16.0),
           ),
         ),
         fixedSize: MaterialStateProperty.all<Size>(
